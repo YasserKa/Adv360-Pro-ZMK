@@ -11,6 +11,7 @@
 #define NUM 1
 #define FN  2
 #define SYS 3
+#define MEDIA 4
 
 / {
     behaviors {
@@ -41,11 +42,11 @@
 
     default_layer {
       bindings = <
-        XXX     XXX   XXX   XXX   XXX   XXX   XXX                                                                    &mo SYS XXX     XXX   XXX       XXX     XXX      XXX
-        XXX     &kp Q &kp W &kp E &kp R &kp T XXX                                                                    XXX     &kp Y   &kp U &kp I     &kp O   &kp P    XXX
-        &kp ESC &kp A &kp S &kp D &kp F &kp G XXX            &kp LCTRL &kp TAB  &kp LGUI &kp RCTRL           XXX     &kp H   &kp J &kp K     &kp L   &kp SEMI &mo NUM
-        XXX     &kp Z &kp X &kp C &kp V &kp B                          XXX      &kp BSPC                             &kp N   &kp M &kp COMMA &kp DOT &kp FSLH XXX
-        &mo FN  XXX   XXX   XXX   XXX             &kp LSHIFT &kp LALT  XXX      &kp DEL  &kp ENTER &kp SPACE                 XXX   XXX       XXX     XXX      &mo FN
+        XXX        XXX   XXX      XXX   XXX   XXX   XXX                                                            &mo SYS XXX   XXX   XXX       XXX     XXX      XXX
+        XXX        &kp Q &kp W    &kp E &kp R &kp T XXX                                                            XXX     &kp Y &kp U &kp I     &kp O   &kp P    XXX
+        &kp ESC    &kp A &kp S    &kp D &kp F &kp G XXX            &kp LCTRL &kp TAB  &kp RGUI &kp RCTRL           XXX     &kp H &kp J &kp K     &kp L   &kp SEMI &mo NUM
+        XXX        &kp Z &kp X    &kp C &kp V &kp B                          XXX      &kp BSPC                             &kp N &kp M &kp COMMA &kp DOT &kp FSLH XXX
+        &mo MEDIA  XXX   &kp LGUI XXX   XXX             &kp LSHIFT &kp LALT  XXX      &kp DEL  &kp ENTER &kp SPACE               XXX   XXX       XXX     XXX      &mo FN
       >;
     };
     num {
@@ -73,6 +74,16 @@
         &none &none        &none        &none        &none        &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none        &none        &none
         &none &none        &none        &none        &none        &none                                                          &none      &none                                                        &none        &none        &none        &none        &none        &none
         &none &none        &none        &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG &none      &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
+      >;
+    };
+
+    media {
+      bindings = <
+        XXX  XXX  XXX  XXX  XXX  XXX  XXX                               XXX  XXX  XXX           XXX                XXX  XXX  XXX
+        XXX  XXX  XXX  XXX  XXX  XXX  XXX                               XXX  XXX  XXX           XXX                XXX  XXX  XXX
+        XXX  XXX  XXX  XXX  XXX  XXX  XXX      ___  XXX  ___  XXX       XXX  XXX  &kp C_VOL_DN  &kp C_VOL_UP       XXX  XXX  XXX
+        XXX  XXX  XXX  XXX  XXX  XXX                XXX  XXX                 XXX  &kp C_MUTE    &kp C_MEDIA_PHONE  XXX  XXX  XXX
+        XXX  XXX  XXX  XXX  XXX           ___  ___  XXX  XXX  XXX  XXX            XXX           XXX                XXX  XXX  XXX
       >;
     };
   };

@@ -35,6 +35,7 @@ CONFIG_FLASH_MAP=y
 CONFIG_CLOCK_CONTROL_NRF_K32SRC_XTAL=y
 CONFIG_CLOCK_CONTROL_NRF_K32SRC_500PPM=y
 
+# NOTE: compiling makes an error if this is set to "n". Only the left config is needed to be set to "n" to work
 CONFIG_ZMK_RGB_UNDERGLOW=y
 CONFIG_ZMK_RGB_UNDERGLOW_EXT_POWER=y
 CONFIG_ZMK_RGB_UNDERGLOW_ON_START=y

@@ -36,17 +36,17 @@
         XXX        XXX   XXX      XXX   XXX   XXX   XXX                                                            &mo SYS XXX   XXX   XXX       XXX     XXX      XXX
         &kp TAB    &kp Q &kp W    &kp E &kp R &kp T XXX                                                            XXX     &kp Y &kp U &kp I     &kp O   &kp P    XXX
         &kp ESC    &kp A &kp S    &kp D &kp F &kp G XXX            &kp LCTRL &kp TAB  &kp RGUI &kp RCTRL           XXX     &kp H &kp J &kp K     &kp L   &kp SEMI &mo NUM
-        XXX        &kp Z &kp X    &kp C &kp V &kp B                          XXX      &kp BSPC                             &kp N &kp M &kp COMMA &kp DOT &kp FSLH XXX
+        &kp LSHIFT &kp Z &kp X    &kp C &kp V &kp B                          XXX      &kp BSPC                             &kp N &kp M &kp COMMA &kp DOT &kp FSLH XXX
         &mo MEDIA  XXX   &kp LGUI XXX   XXX             &kp LSHIFT &kp LALT  XXX      &kp DEL  &kp ENTER &kp SPACE               XXX   XXX       XXX     XXX      &mo FN
       >;
     };
     num {
       bindings = <
-        XXX  XXX        XXX     XXX     XXX     XXX        XXX                                  XXX  XXX    XXX    XXX       XXX  XXX  XXX
-        XXX  &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT   XXX                                  XXX  XXX    XXX    XXX       XXX  XXX  XXX
-        XXX  &kp APOS   &kp N4  &kp N5  &kp N6  &kp EQUAL  XXX        ___  XXX  ___  XXX        XXX  XXX    &kp N0 &kp MINUS XXX  XXX  XXX
-        XXX  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH                   XXX  XXX                  XXX    XXX    XXX       XXX  XXX  XXX
-        XXX  XXX        XXX     XXX     XXX                      ___  ___  XXX  XXX  XXX  XXX               XXX    XXX       XXX  XXX  XXX
+        XXX         XXX        XXX     XXX     XXX     XXX        XXX                                  XXX  XXX    XXX    XXX       XXX  XXX  XXX
+        XXX         &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT   XXX                                  XXX  XXX    XXX    XXX       XXX  XXX  XXX
+        XXX         &kp APOS   &kp N4  &kp N5  &kp N6  &kp EQUAL  XXX        ___  XXX  ___  XXX        XXX  XXX    &kp N0 &kp MINUS XXX  XXX  XXX
+        &kp LSHIFT  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH                   XXX  XXX                  XXX    XXX    XXX       XXX  XXX  XXX
+        XXX         XXX        XXX     XXX     XXX                      ___  ___  XXX  XXX  XXX  XXX               XXX    XXX       XXX  XXX  XXX
       >;
     };
     fn {

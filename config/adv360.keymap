@@ -12,6 +12,8 @@
 #define FN  2
 #define SYS 3
 #define MEDIA 4
+#define HYPER_MOD &kp LG(LS(LC(LALT)))
+#define MEH_MOD &kp LS(LC(LALT))
 
 / {
     behaviors {
@@ -42,29 +44,29 @@
 
     default_layer {
       bindings = <
-        XXX              XXX   XXX   XXX       XXX       XXX   XXX                                                                 &mo SYS XXX   XXX      XXX    XXX       XXX     XXX
-        &kp LGUI         &kp Q &kp W &kp E     &kp R     &kp T XXX                                                                 XXX     &kp Y &kp U    &kp I  &kp O     &kp P   XXX
-        &kp TAB          &kp A &kp S &kp D     &kp F     &kp G XXX            &kp LCTRL &kp LS(LCTRL) &kp RGUI &kp ESC                     XXX   &kp H    &kp J  &kp K     &kp L   &kp SEMI  &mo NUM
-        &kp LS(LC(LALT)) &kp Z &kp X &kp C     &kp V     &kp B                          &kp LS(LALT)  &kp BSPC                                   &kp N    &kp M  &kp COMMA &kp DOT &kp SLASH &kp LS(LC(LALT))
-        &mo MEDIA        XXX   XXX   &kp LEFT  &kp RIGHT           &kp LSHIFT &kp LALT  &kp LC(LALT)  &kp DEL  &kp ENTER &kp SPACE               &kp DOWN &kp UP XXX       XXX     XXX       &mo FN
+        XXX       XXX   XXX      XXX       XXX       XXX   XXX                                                                 &mo SYS XXX   XXX      XXX       XXX     XXX       XXX
+        HYPER_MOD &kp Q &kp W    &kp E     &kp R     &kp T XXX                                                                 XXX     &kp Y &kp U    &kp I     &kp O   &kp P     HYPER_MOD
+        &kp TAB   &kp A &kp S    &kp D     &kp F     &kp G XXX            &kp LCTRL &kp LS(LCTRL) &kp RGUI &kp ESC             XXX     &kp H &kp J    &kp K     &kp L   &kp SEMI  &mo NUM
+        MEH_MOD   &kp Z &kp X    &kp C     &kp V     &kp B                          &kp LS(LALT)  &kp BSPC                             &kp N &kp M    &kp COMMA &kp DOT &kp SLASH MEH_MOD
+        &mo MEDIA XXX   &kp LGUI &kp LEFT  &kp RIGHT           &kp LSHIFT &kp LALT  &kp LC(LALT)  &kp DEL  &kp ENTER &kp SPACE               &kp DOWN &kp UP    XXX     XXX       &mo FN
       >;
     };
     num {
       bindings = <
         XXX  XXX        XXX     XXX     XXX     XXX        XXX                                  XXX  XXX    XXX    XXX       XXX  XXX  XXX
-        XXX  &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT   XXX                                  XXX  XXX    XXX    XXX       XXX  XXX  XXX
+        ___  &kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT   XXX                                  XXX  XXX    XXX    XXX       XXX  XXX  XXX
         XXX  &kp APOS   &kp N4  &kp N5  &kp N6  &kp EQUAL  XXX        ___  ___  ___  XXX        XXX  XXX    &kp N0 &kp MINUS XXX  XXX  XXX
         ___  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH                   ___  XXX                  XXX    XXX    XXX       XXX  XXX  XXX
-        XXX  XXX        XXX     XXX     XXX                      ___  ___  ___  XXX  XXX  XXX               XXX    XXX       XXX  XXX  XXX
+        XXX  XXX        ___     XXX     XXX                      ___  ___  ___  XXX  XXX  XXX               XXX    XXX       XXX  XXX  XXX
       >;
     };
     fn {
       bindings = <
         XXX  XXX      XXX     XXX     XXX     XXX  XXX                                XXX  XXX  XXX  XXX  XXX  XXX  XXX
-        XXX  &kp F12  &kp F7  &kp F8  &kp F9  XXX  XXX                                XXX  XXX  XXX  XXX  XXX  XXX  XXX
+        ___  &kp F12  &kp F7  &kp F8  &kp F9  XXX  XXX                                XXX  XXX  XXX  XXX  XXX  XXX  ___
         XXX  &kp F11  &kp F4  &kp F5  &kp F6  XXX  XXX       ___  ___  ___  XXX       XXX  XXX  XXX  XXX  XXX  XXX  XXX
-        ___  &kp F10  &kp F1  &kp F2  &kp F3  XXX                 ___  XXX                 XXX  XXX  XXX  XXX  XXX  XXX
-        XXX  XXX      XXX     XXX     XXX               ___  ___  ___  XXX  XXX  XXX            XXX  XXX  XXX  XXX  XXX
+        ___  &kp F10  &kp F1  &kp F2  &kp F3  XXX                 ___  XXX                 XXX  XXX  XXX  XXX  XXX  ___
+        XXX  XXX      ___     XXX     XXX               ___  ___  ___  XXX  XXX  XXX            XXX  XXX  XXX  XXX  XXX
       >;
     };
     mod {
@@ -80,10 +82,10 @@
     media {
       bindings = <
         XXX  XXX  XXX  XXX  XXX  XXX  XXX                               XXX  XXX  XXX           XXX                XXX  XXX  XXX
-        XXX  XXX  XXX  XXX  XXX  XXX  XXX                               XXX  XXX  XXX           XXX                XXX  XXX  XXX
+        ___  XXX  XXX  XXX  XXX  XXX  XXX                               XXX  XXX  XXX           XXX                XXX  XXX  XXX
         XXX  XXX  XXX  XXX  XXX  XXX  XXX      ___  ___  ___  XXX       XXX  XXX  &kp C_VOL_DN  &kp C_VOL_UP       XXX  XXX  XXX
-        XXX  XXX  XXX  XXX  XXX  XXX                ___  XXX                 XXX  &kp C_MUTE    &kp C_MEDIA_PHONE  XXX  XXX  XXX
-        XXX  XXX  XXX  XXX  XXX           ___  ___  ___  XXX  XXX  XXX            XXX           XXX                XXX  XXX  XXX
+        ___  XXX  XXX  XXX  XXX  XXX                ___  XXX                 XXX  &kp C_MUTE    &kp C_MEDIA_PHONE  XXX  XXX  XXX
+        XXX  XXX  ___  XXX  XXX           ___  ___  ___  XXX  XXX  XXX            XXX           XXX                XXX  XXX  XXX
       >;
     };
   };

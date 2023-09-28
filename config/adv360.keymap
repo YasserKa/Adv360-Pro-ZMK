@@ -12,8 +12,10 @@
 #define FN  2
 #define SYS 3
 #define MEDIA 4
-#define HYPER_MOD &kp LG(LS(LC(LALT)))
+/* S-C-M */
 #define MEH_MOD &kp LS(LC(LALT))
+/* S-C-M-s */
+#define HYPER_MOD &kp LG(LS(LC(LALT)))
 
 / {
     behaviors {
@@ -35,11 +37,11 @@
 
     default_layer {
       bindings = <
-        XXX       XXX   XXX      XXX       XXX       XXX   XXX                                                                 &mo SYS XXX   XXX      XXX       XXX     XXX       XXX
-        HYPER_MOD &kp Q &kp W    &kp E     &kp R     &kp T XXX                                                                 XXX     &kp Y &kp U    &kp I     &kp O   &kp P     HYPER_MOD
-        &kp TAB   &kp A &kp S    &kp D     &kp F     &kp G XXX            &kp LCTRL &kp LS(LCTRL) &kp RGUI &kp ESC             XXX     &kp H &kp J    &kp K     &kp L   &kp SEMI  &mo NUM
-        MEH_MOD   &kp Z &kp X    &kp C     &kp V     &kp B                          &kp LS(LALT)  &kp BSPC                             &kp N &kp M    &kp COMMA &kp DOT &kp SLASH MEH_MOD
-        &mo MEDIA XXX   &kp LGUI &kp LEFT  &kp RIGHT           &kp LSHIFT &kp LALT  &kp LC(LALT)  &kp DEL  &kp ENTER &kp SPACE               &kp DOWN &kp UP    XXX     XXX       &mo FN
+        XXX       XXX   XXX      XXX       XXX       XXX   XXX                                                              &mo SYS XXX   XXX      XXX       XXX     XXX       XXX
+        HYPER_MOD &kp Q &kp W    &kp E     &kp R     &kp T XXX                                                              XXX     &kp Y &kp U    &kp I     &kp O   &kp P     HYPER_MOD
+        &kp TAB   &kp A &kp S    &kp D     &kp F     &kp G XXX            &kp LCTRL &kp LS(LCTRL) &kp RGUI &kp ESC          XXX     &kp H &kp J    &kp K     &kp L   &kp SEMI  &mo NUM
+        MEH_MOD   &kp Z &kp X    &kp C     &kp V     &kp B                          &kp LS(LALT)  &kp BSPC                          &kp N &kp M    &kp COMMA &kp DOT &kp SLASH MEH_MOD
+        &mo MEDIA XXX   &kp LGUI &kp LEFT  &kp RIGHT           &kp LSHIFT &kp LALT  &kp LC(LALT)  &kp DEL  &kp ENTER &kp SPACE            &kp DOWN &kp UP    XXX     XXX       &mo FN
       >;
     };
     num {
@@ -82,4 +84,4 @@
   };
 };
 
-/* vim: set ft=c tw=174: */
+/* vim: set ft=c tw=174 nowrap: */

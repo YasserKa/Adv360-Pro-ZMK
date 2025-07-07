@@ -71,10 +71,10 @@
       display-name = "Mod";
       bindings = <
         XXX XXX          XXX          XXX          XXX          XXX          XXX                                                                                                &trans                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 XXX
-        XXX XXX          XXX          XXX          XXX          XXX          &bootloader                                                                                        &bootloader            XXX          XXX          XXX          XXX          XXX          XXX
-        XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 XXX          XXX          XXX          XXX          XXX          XXX
+        XXX XXX          XXX          XXX          &bt BT_CLR   XXX          &bootloader                                                                                        &bootloader            XXX          XXX          XXX          XXX          XXX          XXX
+        XXX &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &rgb_ug RGB_MEFS_CMD 5                 XXX        XXX        XXX XXX                               &rgb_ug RGB_MEFS_CMD 5 XXX          XXX          XXX          XXX          XXX          XXX
         XXX XXX          XXX          XXX          XXX          XXX                                                            XXX        XXX                                                          XXX          XXX          XXX          XXX          XXX          XXX
-        XXX XXX          XXX          &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG XXX        XXX        &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   XXX          XXX          XXX
+        XXX XXX          XXX          &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG XXX        XXX &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   XXX          XXX          XXX
       >;
     };
     media {
